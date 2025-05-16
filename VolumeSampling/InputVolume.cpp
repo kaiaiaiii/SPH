@@ -21,7 +21,7 @@ int main()
         cout << Gridpoints;
         for(int i =(0 - MainMeassurement); i < (0+MainMeassurement); i++)
         {
-
+            
         } 
     }
     return 0; 
