@@ -26,8 +26,30 @@ float WendlandKernel(float Pos_Particle, float Pos_NeighborParticle)
     return WendlandKernelWert;
 }
 
-double Bewegungsgleichung(float Pos_Particle)
+float BeschleunigungDruckgradient()
 {
+    return 0.0;
+}
+
+float BeschleunigungViskositaet()
+{
+    return 0.0;
+}
+
+float BeschleunigungOberflaechenspannung()
+{
+    return 0.0;
+}
+
+float BeschleunigungKoerperkraefte()
+{
+    return 0.0;
+}
+
+float Bewegungsgleichung(float Pos_Particle, float Druckgradient, float Viskositaet, float Oberflaechenspannung, float Koerperkraefte)
+{
+    float BeschleunigungGesamt = Druckgradient+ Viskositaet + Oberflaechenspannung + Koerperkraefte;
+    
     return 0.0;
 }
  
